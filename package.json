@@ -1,0 +1,24 @@
+{
+  "name": "Frontend&Backend_Kr-2",
+  "version": "1.0.0",
+  "description": "Практики 7–11: API + React (auth, JWT, refresh, RBAC)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev:server": "node server.js",
+    "dev": "node ./node_modules/concurrently/dist/bin/concurrently.js \"npm run dev:server\" \"npm run dev --prefix frontend\"",
+    "test": "echo \"No tests\" && exit 0"
+  },
+  "private": true,
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "nanoid": "^3.3.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
